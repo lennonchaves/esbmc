@@ -95,11 +95,11 @@ Before start to use ESBMC, we need install some dependencies and configure the e
     
 After setup and install all dependencies, configure CMake and build the ESBMC according to the following commands:
 
- (1) Configure CMake
+ (9) Configure CMake
     
     mkdir build && cd build && cmake .. -GNinja -DBUILD_TESTING=On -DENABLE_REGRESSION=On -DClang_DIR=$PWD/../clang9 -DLLVM_DIR=$PWD/../clang9 -DBUILD_STATIC=On -DBoolector_DIR=$PWD/../boolector-release -DZ3_DIR=$PWD/../z3 -DENABLE_MATHSAT=ON -DMathsat_DIR=$PWD/../mathsat -DENABLE_YICES=On -DYices_DIR=$PWD/../yices -DCVC4_DIR=$PWD/../cvc4 -DGMP_DIR=$PWD/../gmp -DCMAKE_INSTALL_PREFIX:PATH=$PWD/../release
 
- (2) Build ESBMC
+ (10) Build ESBMC
     
        cd build && cmake --build . && ninja install
 
