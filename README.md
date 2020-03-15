@@ -102,6 +102,8 @@ After setup and install all dependencies, configure CMake and build the ESBMC ac
  (10) Build ESBMC
     
        cd build && cmake --build . && ninja install
+       
+Navigate to the directory "releases/bin" and find the ESBMC binary generated. In the command-line, run *esbmc --help* to confirm that the ESBMC is working fine.
 
 ### Documentation
 
